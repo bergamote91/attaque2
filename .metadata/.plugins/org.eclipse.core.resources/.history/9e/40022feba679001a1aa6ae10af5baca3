@@ -1,0 +1,17 @@
+package com.mygdx.game.desktop;
+
+
+import com.badlogic.gdx.Game; 
+import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+import com.mygdx.game.SpaceGame;
+
+public class Launcher {   
+	public static void main (String[] args)    {    
+		Game myGame = new SpaceGame();     
+		LwjglApplication launcher = new LwjglApplication( myGame, "Space Rocks", 800, 600 );   
+	}
+}
+
+
+
+

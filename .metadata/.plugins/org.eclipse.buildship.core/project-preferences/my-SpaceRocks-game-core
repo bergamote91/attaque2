@@ -1,0 +1,12 @@
+#
+#Wed Apr 08 18:32:02 CEST 2020
+classpath=<?xml version\="1.0" encoding\="UTF-8"?>\n<classpath>\n<classpathentry kind\="lib" path\="C\:/Users/ecole/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.10/d68a7a3484d47529a8d23cd467579eb098b38a9e/gdx-box2d-1.9.10.jar" sourcepath\="C\:/Users/ecole/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.10/384a26163490e0dca4e3a1c00d4ae6284d785da5/gdx-box2d-1.9.10-sources.jar">\r\n\t<attributes>\r\n\t\t<attribute name\="gradle_used_by_scope" value\="main,test"/>\r\n\t</attributes>\r\n</classpathentry>\r\n<classpathentry kind\="lib" path\="C\:/Users/ecole/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.9.10/8853e4f08589a9feb4b851187909cfde8810e491/gdx-freetype-1.9.10.jar" sourcepath\="C\:/Users/ecole/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.9.10/9aebbfa282735e9385d5c09a3a9f74152ee5a1dc/gdx-freetype-1.9.10-sources.jar">\r\n\t<attributes>\r\n\t\t<attribute name\="gradle_used_by_scope" value\="main,test"/>\r\n\t</attributes>\r\n</classpathentry>\r\n<classpathentry kind\="lib" path\="C\:/Users/ecole/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.10/79d9ad27bd5e3eb18c9ade61d3a27d7237695d53/gdx-1.9.10.jar" sourcepath\="C\:/Users/ecole/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.10/37e7ec91522313dabc753c72196dd665ea4a9332/gdx-1.9.10-sources.jar">\r\n\t<attributes>\r\n\t\t<attribute name\="gradle_used_by_scope" value\="main,test"/>\r\n\t</attributes>\r\n</classpathentry>\r\n</classpath>\n
+buildScriptPath=build.gradle
+linkedResources=
+subprojectPaths=
+managedNatures=org.eclipse.jdt.core.javanature
+hasAutoBuildTasks=false
+gradleVersion=5.4.1
+buildDir=build
+managedBuilders=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><commands/>
+derivedResources=.gradle;build

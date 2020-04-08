@@ -1,0 +1,36 @@
+package com.mygdx.game;
+
+import com.badlogic.gdx.Input.Keys;
+
+public class LevelScreen extends BaseScreen {   
+	private Spaceship spaceship;
+	
+	
+public void initialize()    {     
+	BaseActor space = new BaseActor(0,0, mainStage);    
+	space.loadTexture( "space.png" );     
+	space.setSize(800,600);     
+	BaseActor.setWorldBounds(space);
+	
+    spaceship = new Spaceship(400,100, mainStage);   
+    
+    
+    new Rock(400,500, mainStage); 
+    
+    
+    }
+
+public void update(float dt)    {    } 
+
+
+
+public boolean keyDown(int keycode)
+{
+    if ( keycode == Keys.SPACE )
+        spaceship.shoot();
+	
+    return false;
+
+   
+}
+}

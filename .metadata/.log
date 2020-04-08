@@ -1,0 +1,463 @@
+!SESSION 2020-04-08 15:57:14.879 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\ecole\Desktop\Starfish -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-08 15:57:21.307
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ecole'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-04-08 16:04:55.283
+!MESSAGE An internal error occurred during: "Loading tasks of all Gradle projects".
+!STACK 0
+com.google.common.util.concurrent.ExecutionError: java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.buildship.ui.internal.console.ConsoleProcessStreamsProvider$BackgroundJobProcessStream
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.getFromCache(DefaultModelProvider.java:98)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.executeOperation(DefaultModelProvider.java:90)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.fetchModels(DefaultModelProvider.java:57)
+	at org.eclipse.buildship.ui.internal.view.task.ReloadTaskViewJob.fetchEclipseGradleProjects(ReloadTaskViewJob.java:93)
+	at org.eclipse.buildship.ui.internal.view.task.ReloadTaskViewJob.loadContent(ReloadTaskViewJob.java:69)
+	at org.eclipse.buildship.ui.internal.view.task.ReloadTaskViewJob.runInToolingApi(ReloadTaskViewJob.java:60)
+	at org.eclipse.buildship.ui.internal.view.task.ReloadTaskViewJob.runInToolingApi(ReloadTaskViewJob.java:45)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob$1.runInToolingApi(ToolingApiJob.java:54)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob.run(ToolingApiJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.buildship.ui.internal.console.ConsoleProcessStreamsProvider$BackgroundJobProcessStream
+	at org.eclipse.buildship.ui.internal.console.ConsoleProcessStreamsProvider.getBackgroundJobProcessStreams(ConsoleProcessStreamsProvider.java:35)
+	at org.eclipse.buildship.core.internal.gradle.GradleProgressAttributes$GradleProgressAttributesBuilder.build(GradleProgressAttributes.java:151)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.newInstance(IdeAttachedProjectConnection.java:99)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:323)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:122)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchModels$3(DefaultModelProvider.java:58)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	... 16 more
+
+!ENTRY org.eclipse.buildship.core 4 6 2020-04-08 16:04:55.384
+!MESSAGE Project import failed due to an unexpected error.
+!STACK 0
+com.google.common.util.concurrent.ExecutionError: java.lang.ExceptionInInitializerError
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.getFromCache(DefaultModelProvider.java:98)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.executeOperation(DefaultModelProvider.java:90)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.fetchEclipseProjectAndRunSyncTasks(DefaultModelProvider.java:72)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.runInToolingApi(DefaultGradleBuild.java:226)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.run(DefaultGradleBuild.java:192)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:100)
+	at org.eclipse.buildship.ui.internal.wizard.project.ProjectImportWizardController$5.run(ProjectImportWizardController.java:213)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.ExceptionInInitializerError
+	at org.eclipse.buildship.ui.internal.console.ConsoleProcessStreamsProvider.getBackgroundJobProcessStreams(ConsoleProcessStreamsProvider.java:35)
+	at org.eclipse.buildship.core.internal.gradle.GradleProgressAttributes$GradleProgressAttributesBuilder.build(GradleProgressAttributes.java:151)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.newInstance(IdeAttachedProjectConnection.java:99)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:323)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:122)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchEclipseProjectAndRunSyncTasks$5(DefaultModelProvider.java:75)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: Image descriptor TASK in state ENABLED not available in UiPlugin image registry.
+	at org.eclipse.buildship.ui.internal.PluginImages$1.getImageDescriptor(PluginImages.java:106)
+	at org.eclipse.buildship.ui.internal.console.GradleConsole.<init>(GradleConsole.java:60)
+	at org.eclipse.buildship.ui.internal.console.GradleConsole.<init>(GradleConsole.java:52)
+	at org.eclipse.buildship.ui.internal.console.ConsoleProcessStreamsProvider.createAndRegisterNewConsole(ConsoleProcessStreamsProvider.java:59)
+	at org.eclipse.buildship.ui.internal.console.ConsoleProcessStreamsProvider.access$100(ConsoleProcessStreamsProvider.java:25)
+	at org.eclipse.buildship.ui.internal.console.ConsoleProcessStreamsProvider$BackgroundJobProcessStream.<clinit>(ConsoleProcessStreamsProvider.java:69)
+	... 29 more
+
+!ENTRY org.eclipse.buildship.core 2 0 2020-04-08 16:05:55.204
+!MESSAGE Failed to detect project changes
+!STACK 1
+org.eclipse.core.runtime.CoreException: SynchronizingBuildScriptUpdateListener failed
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener$1.visit(SynchronizingBuildScriptUpdateListener.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.visitDelta(SynchronizingBuildScriptUpdateListener.java:68)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.resourceChanged(SynchronizingBuildScriptUpdateListener.java:55)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.buildship.core.internal.GradlePluginsRuntimeException: Can't read root project location for project located at C:\Users\ecole\Desktop\Starfish\starfish collector
+	at org.eclipse.buildship.core.internal.configuration.BuildConfigurationPersistence.readPathToRoot(BuildConfigurationPersistence.java:90)
+	at org.eclipse.buildship.core.internal.configuration.DefaultConfigurationManager.loadProjectConfiguration(DefaultConfigurationManager.java:114)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.isEnabledInPreferences(SynchronizingBuildScriptUpdateListener.java:63)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.doVisitDelta(SynchronizingBuildScriptUpdateListener.java:85)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.access$000(SynchronizingBuildScriptUpdateListener.java:44)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener$1.visit(SynchronizingBuildScriptUpdateListener.java:73)
+	... 13 more
+!SUBENTRY 1 org.eclipse.buildship.core 2 0 2020-04-08 16:05:55.204
+!MESSAGE SynchronizingBuildScriptUpdateListener failed
+!STACK 0
+org.eclipse.buildship.core.internal.GradlePluginsRuntimeException: Can't read root project location for project located at C:\Users\ecole\Desktop\Starfish\starfish collector
+	at org.eclipse.buildship.core.internal.configuration.BuildConfigurationPersistence.readPathToRoot(BuildConfigurationPersistence.java:90)
+	at org.eclipse.buildship.core.internal.configuration.DefaultConfigurationManager.loadProjectConfiguration(DefaultConfigurationManager.java:114)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.isEnabledInPreferences(SynchronizingBuildScriptUpdateListener.java:63)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.doVisitDelta(SynchronizingBuildScriptUpdateListener.java:85)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.access$000(SynchronizingBuildScriptUpdateListener.java:44)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener$1.visit(SynchronizingBuildScriptUpdateListener.java:73)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.visitDelta(SynchronizingBuildScriptUpdateListener.java:68)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizingBuildScriptUpdateListener.resourceChanged(SynchronizingBuildScriptUpdateListener.java:55)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.ide 4 4 2020-04-08 16:05:57.334
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2020-04-08 16:05:57.340
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2020-04-08 16:05:57.340
+!MESSAGE The project description file (.project) for 'starfish collector' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-04-08 16:05:58.062
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2020-04-08 16:06:17.744 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-04-08 16:06:20.867
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 567 2020-04-08 16:06:20.896
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2020-04-08 16:06:20.896
+!MESSAGE Could not read metadata for 'starfish collector'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/starfish collector)[567]: java.lang.Exception: The project description file (.project) for 'starfish collector' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2020-04-08 16:06:20.897
+!MESSAGE The project description file (.project) for 'starfish collector' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'starfish collector' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:472)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-08 16:06:25.376
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ecole'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.resources 4 567 2020-04-08 16:08:07.671
+!MESSAGE The project description file (.project) for 'starfish collector' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'starfish collector' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:907)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:763)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1060)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 17:46:43.388
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 17:47:24.155
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 17:47:27.704
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 17:47:31.111
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 17:48:11.618
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 17:48:24.792
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:55:27.434
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Rock.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:55:27.580
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Rock.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:55:27.608
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Rock.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:55:27.614
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Rock.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:56:23.220
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Rock.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:56:23.225
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Laser.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:56:24.065
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Rock.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:56:24.071
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Laser.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:57:32.818
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Rock.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:57:32.824
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Laser.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:58:47.367
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Laser.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:58:48.344
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Laser.java [in my-SpaceRocks-game-core]
+
+!ENTRY org.eclipse.jdt.core 4 0 2020-04-08 17:59:21.142
+!MESSAGE Invalid ZIP archive: src/com/mygdx/game/Laser.java [in my-SpaceRocks-game-core]
+!SESSION 2020-04-08 18:32:15.598 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-08 18:32:27.119
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ecole'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 18:35:10.796
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 18:51:25.919
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 18:52:37.492
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 18:53:12.098
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 18:55:36.592
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 18:56:24.138
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 18:56:43.491
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 18:57:06.233
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:00:00.634
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:00:16.025
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:00:52.018
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:02:41.962
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:28:41.908
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:28:54.139
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:29:13.429
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:54:58.452
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:54:59.928
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 19:57:05.990
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+!SESSION 2020-04-08 20:00:16.351 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-04-08 20:00:25.077
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-08 20:00:37.309
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ecole'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 20:04:37.149
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 20:06:45.875
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 20:09:45.511
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 20:16:50.015
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 20:36:49.194
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 20:38:20.885
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 20:38:59.847
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 20:47:35.362
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 20:49:05.784
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 21:07:44.285
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-04-08 21:15:54.225
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
